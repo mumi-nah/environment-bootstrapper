@@ -73,15 +73,14 @@ GITIGNORE_FILE=".gitignore"
         log_warn "$GITIGNORE_FILE already exists"
     else
         cat > "$GITIGNORE_FILE" <<EOF
-    .venv/
-    venv/
-    *.pyc
-    __pycache__/
-    .pytest_cache/
-    *.log
-    .vscode/
-    .idea/
-    *.tmp
+.venv/
+venv/
+*.pyc
+__pycache__/
+.pytest_cache/
+.vscode/
+.idea/
+*.tmp
 EOF
         log_suc "$GITIGNORE_FILE created successfully."
     fi
